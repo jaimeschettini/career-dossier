@@ -1,0 +1,136 @@
+body {
+	font-family: sans-serif;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h2 {
+	font-size: large;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.frame {
+	height: 640px;
+}
+
+.lifeline h2 {
+	color: white;
+}
+
+.lifeline {
+	background: rgb(133, 193, 212);
+	font-family: 'Merriweather', 'Helvetica', serif;
+	color: rgb(128, 115, 115);
+	padding: 10px 0 0 30px;
+	position: relative;
+	font-weight: lighter;
+}
+
+.lifeline .board {
+    height: 580px;
+    width: 1278px;
+    position: relative;
+    background: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 2px;
+}
+
+.lifeline .horizontal-axis {	
+	position: absolute;
+	top: 50%;
+}
+
+.lifeline .horizontal-axis-line {	
+	height: 2px;
+	border-top: 3px rgb(133, 193, 212) dotted;
+	width: 93%;
+	left: 25px;
+}
+
+.lifeline .horizontal-axis-time {
+	right: 14px;	
+	top: 48.5%;
+}
+
+.lifeline .points {
+	font-family: 'Source Sans Pro', 'Helvetica', serif;
+	height: 25px;
+	position: absolute;
+	left: 10px;
+}
+
+.lifeline .points.high {
+	top: 10px;
+}
+
+.lifeline .points.low {
+	bottom: 20px;
+}
+
+.lifeline .points span {
+	color: rgb(133, 193, 212);
+	font-weight: bold;
+	font-size: 24px;
+	display: inline-block;
+	width: 14px;
+	vertical-align: baseline;
+}
+
+.lifeline .events-board {
+	height: 100%;
+	width: 100%;
+	padding: 36px 65px 36px 36px;
+	box-sizing: border-box;
+	position: relative;
+	overflow-x: scroll;
+}
+
+.lifeline .events-board .events-container {
+    height: 100%;
+	box-sizing: border-box;
+}
+
+.lifeline .events-board .very-exciting {
+    margin-top: 10px;
+}
+
+.lifeline .events-board .exciting {
+    margin-top: 70px;
+}
+
+.lifeline .events-board .little-exciting {
+    margin-top: 130px;
+}
+
+.lifeline .events-board .little-frustrating {
+    margin-top: 270px;
+}
+
+.lifeline .events-board .frustrating {
+    margin-top: 335px;
+}
+
+.lifeline .events-board .very-frustrating {
+    margin-top: 400px;
+}
+
+.lifeline .event {
+	height: 100%;
+	width: 145px;
+	float: left;
+	margin: 0 5px;
+}
+
+.lifeline .event .balloon {
+	background-color: #FF9534;
+	border: 1px black solid;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 13px;
+	font-family: 'Averia Sans Libre', cursive;
+	color: black;
+	position: relative;
+}
