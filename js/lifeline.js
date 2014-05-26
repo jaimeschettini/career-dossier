@@ -28,7 +28,7 @@ $(function() {
 						people: row['gsx$people']['$t'],
 						context: row['gsx$context']['$t'],
 						comments: row['gsx$comments']['$t'],
-						show_in_lifeline: row['gsx$show']['$t']
+						show_in_lifeline: row['gsx$show']['$t'] == "x" ? true : false
 					});
 				});
 
@@ -52,16 +52,21 @@ $(function() {
 					            '</div>' +
 					        '</div>';
 
-					        console.log()
 		jqEvents.append(event_html);
 	};
 
 	var draw_balloons = function(balloons_drawn) {
+		var counter = 0;
+
 		retrieve_data_from_google(function(events) {
 			events.forEach(function(event) {
-				draw_balloon(event);
+				if (event.show_in_lifeline) {
+					draw_balloon(event);
+					counter++;
+				}
 			});
 
+			console.log(counter + " events were drawn.");
 			balloons_drawn();
 		});
 	};
